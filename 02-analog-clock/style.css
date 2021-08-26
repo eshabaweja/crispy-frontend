@@ -1,0 +1,60 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+.clockface
+{
+    width: 37vw;
+    height: 37vw;       /*this block of code defines the dimensions of the clock*/
+    background: url("clock-bg.png") no-repeat;
+    background-size: 100%;
+
+    margin : auto;
+    position: relative;
+}
+
+#clock {
+    margin: 0;
+    position: absolute;    /*this block of code centers the clock*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hourHand, #minHand, #secHand
+{
+    position: absolute;
+    background: #65c0ed;
+    border-radius: 20px;
+    transform-origin: bottom;
+}
+
+#hourHand
+{
+    width: 1.8%;
+    height: 17%;
+    top: 33.5%;
+    left: 49.1%;
+    opacity: 90%;
+
+}
+
+#minHand
+{
+    width: 1.2%;
+    height: 32%;
+    top: 18.5%;
+    left: 49.38%;
+    opacity:75%;
+}
+
+#secHand
+{
+    width: 0.4%;
+    height: 32%;
+    top: 18.1%;
+    left: 49.89%;
+    opacity: 100%;
+
+}
