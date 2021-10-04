@@ -1,0 +1,72 @@
+html {
+  font-size: 10px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: 3.5px solid #000000;
+  border-radius: 10%;
+  margin: 2px;
+  font-size: 12px;
+  padding: 7px 2.5px;
+  transition: all .08s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .7rem #000000;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #65c0ed;
+  box-shadow: 0 0 1.2rem #65c0ed;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #65c0ed;
+
+}
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .keys {
+    flex-direction: column;
+  }
+  .key {
+      border: 3.5px solid #000000;
+      border-radius: 10%;
+      margin: 2px;
+      font-size: 10px;
+      padding: 4px 1.5px;
+      transition: all .08s ease;
+      width: 10rem;
+      text-align: center;
+      color: white;
+      text-shadow: 0 0 .5px #000000;
+  }
+}
